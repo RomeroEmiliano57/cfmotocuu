@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFMOTO Chihuahua | Agencia Oficial</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">CFMOTO <span>CHIHUAHUA</span></div>
+        <a href="#contacto" class="btn-cyan-sm">Cotizar Unidad</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">AGENCIA OFICIAL Y SERVICIO TÉCNICO</span>
+            <h1>EXPERIENCIA TODOTERRENO</h1>
+            <p class="subtitle">Motos de calle, cuatrimotos ATVs, UTVs side-by-side, cascos y refacciones originales en Chihuahua.</p>
+            <div class="hero-buttons">
+                <a href="#modelos" class="btn-cyan">Ver Catálogo de Unidades</a>
+                <a href="#contacto" class="btn-secondary">Agendar Mantenimiento</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="quick-info">
+        <div class="info-card">
+            <h4>UBICACIÓN</h4>
+            <p>Granjas Agropecuarias, 31415 Chihuahua, Chih.</p>
+        </div>
+        <div class="info-card">
+            <h4>HORARIOS DE ATENCIÓN</h4>
+            <p>Lunes a Viernes: 9:00 a.m. – 6:00 p.m.<br>Sábados: 9:00 a.m. – 2:00 p.m.</p>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section class="catalog" id="modelos">
+        <h2 class="section-title">NUESTRA GAMA DE VEHÍCULOS Y SERVICIOS</h2>
+        <div class="divider"></div>
+
+        <div class="catalog-grid">
+            <div class="category-card">
+                <div class="card-body">
+                    <h3>Todoterreno & ATVs</h3>
+                    <p>Cuatrimotos y vehículos UTV side-by-side diseñados para rendimiento extremo en cualquier terreno.</p>
+                    <button class="btn-select" onclick="seleccionarOpcion('Cuatrimotos / Todoterreno ATVs')">Cotizar Unidad</button>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="card-body">
+                    <h3>Motocicletas de Calle y Chopper</h3>
+                    <p>Líneas deportivas, naked y touring con tecnología de punta y diseño aerodinámico.</p>
+                    <button class="btn-select" onclick="seleccionarOpcion('Motocicletas de Calle y Chopper')">Cotizar Unidad</button>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="card-body">
+                    <h3>Asistencia Técnica y Taller</h3>
+                    <p>Mantenimiento preventivo, diagnóstico especializado y reparaciones generales garantizadas.</p>
+                    <button class="btn-select" onclick="seleccionarOpcion('Asistencia Técnica y Servicio')">Agendar Cita</button>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="card-body">
+                    <h3>Equipamiento y Refacciones</h3>
+                    <p>Cascos certificados, indumentaria de protección y piezas de repuesto 100% originales.</p>
+                    <button class="btn-select" onclick="seleccionarOpcion('Cascos, Equipamiento y Refacciones')">Consultar Piezas</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contacto">
+        <div class="contact-box">
+            <h2>SOLICITAR COTIZACIÓN O SERVICIO</h2>
+            <p>Déjanos tus datos e interés de vehículo o servicio para enviarte la información completa a tu WhatsApp.</p>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="categoria">Interés principal:</label>
+                    <select id="categoria" required>
+                        <option value="Cuatrimotos / Todoterreno ATVs">Cuatrimotos / Todoterreno ATVs</option>
+                        <option value="Motocicletas de Calle y Chopper">Motocicletas de Calle y Chopper</option>
+                        <option value="Asistencia Técnica y Servicio">Asistencia Técnica y Servicio de Taller</option>
+                        <option value="Cascos, Equipamiento y Refacciones">Cascos, Equipamiento y Refacciones</option>
+                        <option value="Financiamiento">Planes de Financiamiento</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Detalles o modelo de consulta:</label>
+                    <input type="text" id="mensaje" placeholder="Ej. Cotización de modelo específico, cita de taller, etc." required>
+                </div>
+
+                <button type="submit" class="btn-cyan-block">Enviar Consulta por WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 CFMOTO Chihuahua. Todos los derechos reservados.</p>
+        <p class="credit">Desarrollado por <a href="#">Emiliano Romero</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
